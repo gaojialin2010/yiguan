@@ -72,6 +72,11 @@ public class ResetPwdActivity extends BaseActivity {
 			});
 		}
 		
+		
+		
+		Intent intent = new Intent(ResetPwdActivity.this, LoginActivity.class);
+		intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+		startActivity(intent);
 	}
 
 	public void onForgetPwdClicked( View v )
