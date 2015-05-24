@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff7f7f7"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" >
+
+            <RelativeLayout
+                android:id="@+id/tabLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_weight="0.5"
+                android:visibility="visible" >
+
+                <ScrollView
+                    android:id="@+id/ScrollView01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:background="@drawable/normal_bk_2" >
+
+                            <ImageView
+                                android:id="@+id/imageView4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="15dp"
+                                android:src="@drawable/icon_zhenshu" />
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="20dp"
+                                android:layout_toRightOf="@+id/imageView4"
+                                android:text="本年度已获得学分:"
+                                android:textColor="#ff444444"
+                                android:textSize="15sp" />
+
+                            <TextView
+                                android:id="@+id/TextView01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBaseline="@+id/textView3"
+                                android:layout_alignBottom="@+id/textView3"
+                                android:layout_marginLeft="15dp"
+                                android:layout_toRightOf="@+id/textView3"
+                                android:text="15"
+                                android:textColor="#ffff0000"
+                                android:textSize="15sp" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="24dp" >
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/normal_bk_1"
+                            android:orientation="vertical" >
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="38dp"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="0dp"
+                                android:layout_marginTop="0dp" >
+
+                                <TextView
+                                    android:id="@+id/TextView04"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="28dp"
+                                    android:text="时间"
+                                    android:textColor="#ff444444" />
+
+                                <TextView
+                                    android:id="@+id/TextView05"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toLeftOf="@+id/ImageView03"
+                                    android:layout_toRightOf="@+id/ImageView02"
+                                    android:gravity="center_horizontal"
+                                    android:text="培训课程"
+                                    android:textColor="#ff444444" />
+
+                                <TextView
+                                    android:id="@+id/TextView06"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="32dp"
+                                    android:text="学分"
+                                    android:textColor="#ff444444" />
+
+                                <ImageView
+                                    android:id="@+id/ImageView03"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="34dp"
+                                    android:layout_toLeftOf="@+id/TextView06"
+                                    android:src="@drawable/line_v" />
+
+                                <ImageView
+                                    android:id="@+id/ImageView02"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="30dp"
+                                    android:layout_alignTop="@+id/ImageView03"
+                                    android:layout_marginLeft="26dp"
+                                    android:layout_toRightOf="@+id/TextView04"
+                                    android:src="@drawable/line_v" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="38dp"
+                                android:layout_marginBottom="0dp"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginRight="0dp"
+                                android:layout_marginTop="0dp" >
+
+                                <TextView
+                                    android:id="@+id/TextView02"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toLeftOf="@+id/TextView03"
+                                    android:layout_toRightOf="@+id/textView4"
+                                    android:gravity="center_horizontal"
+                                    android:text="骨科临床"
+                                    android:textColor="#ff444444"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/TextView03"
+                                    android:layout_width="95dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:gravity="center_horizontal"
+                                    android:text="5"
+                                    android:textColor="#ff444444"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="85dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_centerVertical="true"
+                                    android:gravity="center_horizontal"
+                                    android:text="2015-01-01"
+                                    android:textColor="#ff444444"
+                                    android:textSize="12sp" />
+
+                            </RelativeLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

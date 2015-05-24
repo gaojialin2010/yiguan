@@ -1,0 +1,26 @@
+package com.example.dajiayiguan;
+
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+public class LeftMainFragment extends Fragment {
+	
+	
+	private int contentId;
+	
+	public void setContentResId( int id )
+	{
+		contentId = id;
+	}
+	
+	@Override  
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,  
+            Bundle savedInstanceState)  
+    {  
+        View view = inflater.inflate(contentId, container, false);
+        return view;  
+    }  
+}
